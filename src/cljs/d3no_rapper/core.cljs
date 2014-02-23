@@ -1,6 +1,5 @@
-(ns d3ne_rapper.core
-    (:refer-clojure :exclude [range keys filter sort map merge])
-    (:require [clojure.browser.repl]))
+(ns d3no_rapper.core
+    (:refer-clojure :exclude [range keys filter sort map merge]))
 
 (def d3 js/d3)
 
