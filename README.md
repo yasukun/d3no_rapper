@@ -62,10 +62,10 @@ Add the following to your `project.clj`
                  (-> svg (append "g")
                      (attr "class" "x axis")
                      (attr "transform" (str "translate(0," height ")"))
-                     (call (-> d3 .-svg axis (scale x) (orient "bottom"))))
+                     (call (-> d3 dr/svg axis (scale x) (orient "bottom"))))
                  (-> svg (append "g")
                      (attr "class" "y axis")
-                     (call (-> d3 .-svg axis (scale y) (orient "left"))))
+                     (call (-> d3 dr/svg axis (scale y) (orient "left"))))
 
                  (-> svg (selectAll ".series")
                      (dr/data series)
